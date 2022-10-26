@@ -1,7 +1,7 @@
 .contenedor{
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 .logo{
     width: 6rem;

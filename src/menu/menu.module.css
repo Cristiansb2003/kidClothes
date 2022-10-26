@@ -35,7 +35,6 @@ nav ul li{
 
 nav ul li::after{
     content: '';
-    background: #f44566;
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -47,7 +46,21 @@ nav ul li::after{
     opacity: 0;
     transition: top 0.5s, opacity 0.5s;
 }
-
+nav ul li.ini::after{
+    background: #fa6966;
+}
+nav ul li.rop::after{
+    background: #f9b24a;
+}
+nav ul li.not::after{
+    background: #be66fa;
+}
+nav ul li.inf::after{
+    background: #93cc49;
+}
+nav ul li.us::after{
+    background: #fa6966;
+}
 nav ul li:hover{
     color: #fff;
 }
