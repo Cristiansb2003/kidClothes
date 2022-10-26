@@ -4,7 +4,8 @@ import img3 from "./../assets/img/3.jpeg";
 import st from "./carrucel.module.css";
 function Carrucel() {
   return (
-    <div className={st.contenedor}>
+    <div className={st.contenedor_p}>
+        <div className={st.contenedor}>
       <div className={st.slider}>
         <ul>
           <li>
@@ -18,6 +19,7 @@ function Carrucel() {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }

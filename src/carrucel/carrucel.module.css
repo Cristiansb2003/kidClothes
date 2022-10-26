@@ -1,17 +1,20 @@
-.contenedor{
+.contenedor_p{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    width: 85%;
 }
 .slider {
   width: 90%;
   margin: auto;
   overflow: hidden;
-  border: solid black;
 }
 .slider ul {
   display: flex;
   padding: 0;
   width: 300%;
-  border: salmon solid;
   animation: cambio 20s infinite  alternate;
 }
 
@@ -23,7 +26,7 @@
 }
 .slider img{
     width: 100%;
-    border: solid slateblue;
+    object-fit: scale-down;
 }
 
 @keyframes cambio {
