@@ -1,0 +1,146 @@
+.prueba{
+    min-height: 50%;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.externo{
+    position: relative;
+    
+    min-width: 350px;
+    min-height: 450px;
+    border-width: 10%;
+    border-top: 20%;
+    border-style: solid;
+    border-color: aquamarine;
+    background-color: white;
+    
+}
+
+/* TRIANGULOS DE LAS ESQUINAS */
+.superior{
+    clip-path: polygon(0 0, 0 39%, 51% 0);
+    background: aquamarine;
+    width: 75%;
+    height: 70%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.inferior{
+    clip-path: polygon(46% 100%, 100% 100%, 100% 65%);
+    background: aquamarine;
+    width: 75%;
+    height: 70%;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ACOMODO DE LOS TEXTOS Y DISEÑO DE ELLOS */
+
+.textos{
+    position: absolute;
+    /*background-color: antiquewhite;*/
+    bottom: 10px;
+    vertical-align: bottom;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    right: 40%;
+    left: auto;
+    
+
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.links{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10%;
+    transition: all 1s ease;
+    /*background:linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+    height: 2px;
+    transform-origin: left;
+    transform: scaleX(0);*/
+}
+
+/*.links:before{
+    color: black;
+    content: '';
+    background-color: green;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10%;
+   
+    transition: all 1s ease;
+
+    
+}*/
+
+.links:hover{
+    
+    background-color: white;
+    color: white;
+    
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+    border-radius: 10%;
+    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
+
+    
+}
+.links:hover{
+    color: white;
+}
+
+.imagen2:hover{
+    /*max-width: 65%;
+    max-height: auto;*/
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+
+
+/*ACOMODO DEL DIV DE ATRAS DE LA IMG */
+.gris{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    min-width: 60%;
+    min-height: 48%;
+    margin-bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.00);
+    opacity: 1;
+
+}
+
+/*ACOMODO DE LA IMAGEN */
+.imagen{
+    vertical-align: middle;
+    max-width: 75%;
+    max-height: auto;
+    margin-top: 25px;
+   
+    
+}
+
+.imagen:hover{
+    /*max-width: 65%;
+    max-height: auto;*/
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
