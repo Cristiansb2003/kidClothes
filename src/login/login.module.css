@@ -1,3 +1,14 @@
-.p{
-   color: blue;
+.formulario {
+   border: 1px dotted rgb(170, 170, 170);
+}
+
+.formulario-col {
+   display: block;
+   width: 40%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.formulario-button {
+   border-radius: 5px;
 }
