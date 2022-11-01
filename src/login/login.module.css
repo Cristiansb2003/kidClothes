@@ -1,23 +1,36 @@
 .formulario {
    border: 2px solid #fff;
+   background-color: rgba(256, 256, 256, 0.05);
    padding-bottom: 50px;
    padding-left: 100px;
    padding-right: 100px;
-   border-radius: 5px;
+   border-radius: 10px;
 }
 
-.formulario form {
-   background-color: rgba(0, 0, 0, 0.3);
-   border-radius: 5px;
-   padding-bottom: 10px;
-   padding-left: 30px;
-   padding-right: 30px;
-   padding-top: 3px;
-}
+   .formulario div {
+      background-color: #000;
+      border-radius: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+   }
 
-.formulario button {
-   margin-top: 15px;
-   border-radius: 5px;
-   background-color: blue;
-   color: #fff;
-}
+   .formulario button {
+      border-radius: 10px;
+      background-color: blue;
+      color: #fff;
+   }
+
+   .formulario input {
+      background-color: rgb(245, 245, 245);
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 10px;
+      border: 2px solid rgb(0, 102, 255);
+   }
