@@ -33,6 +33,11 @@ nav ul li{
     transition: color 0.5s;
 }
 
+nav ul li.us:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 nav ul li::after{
     content: '';
     width: 100%;
@@ -58,13 +63,15 @@ nav ul li.not::after{
 nav ul li.inf::after{
     background: #93cc49;
 }
-nav ul li.us::after{
-    background: #fa6966;
-}
+
 nav ul li:hover{
     color: #fff;
 }
 nav ul li:hover::after{
     top: 50%;  
     opacity: 1; 
+}
+
+.us img{ 
+    width: 2rem;
 }

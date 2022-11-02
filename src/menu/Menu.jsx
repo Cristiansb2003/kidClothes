@@ -1,4 +1,6 @@
 import st from "./menu.module.css";
+import user from "./../assets/user.svg"
+import user2 from "./../assets/user2.png"
 function Menu() {
   return (
     <div className={st.contenedor}>
@@ -9,7 +11,7 @@ function Menu() {
             <li className={st.rop}>Ropa</li>
             <li className={st.not}>Noticias</li>
             <li className={st.inf}>Info</li>
-            <li className={st.us}>Usuario</li>
+            <li className={st.us}><img src={user2}/></li>
           </ul>
         </nav>
       </div>
