@@ -5,8 +5,8 @@
    padding-left: 100px;
    padding-right: 100px;
    border-radius: 10px;
-}
-
+ }
+ 
    .formulario div {
       background-color: #000;
       border-radius: 10px;
@@ -15,22 +15,28 @@
       padding-right: 30px;
       padding-top: 10px;
    }
-
+ 
    .formulario button {
       border-radius: 10px;
       background-color: blue;
       color: #fff;
    }
-
+ 
    .formulario input {
+      justify-content: center;
       background-color: rgb(245, 245, 245);
       color: #000;
       display: flex;
-      flex-direction: column;
+      margin: auto;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
       border-radius: 10px;
       border: 2px solid rgb(0, 102, 255);
+   }
+
+   .formulario a {
+      font-style: none;
+      font-size: 0.8rem;
    }
