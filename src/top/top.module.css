@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: .5rem;
+  border-bottom: 2px dotted #dedede;
+padding-left: 9rem;
+padding-right: 9rem;
+padding-top: 6px;
+padding-bottom: .5rem;
 }
 .logo{
     width: 6rem;
