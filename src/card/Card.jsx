@@ -1,69 +1,69 @@
-import './card.css'
+import st from './card.module.css'
 function Card(){
     return(<>
     
-    <table className='tablagen'>
+    <table className={st.tablagen}>
         <td>
-        <div className="externo">
-            <div className='superior'></div>
-            <div className='inferior'> </div>
+        <div className={st.externo}>
+            <div className={st.superior}></div>
+            <div className={st.inferior}> </div>
 
-            <div className='gris'>
+            <div className={st.gris}>
 
-                <img src="\src\imagenes\conjcel.jpg" alt="" className='imagen'/>
+                <img src="\src\imagenes\conjcel.jpg" alt="" className={st.imagen}/>
 
             </div>
 
-            <div className='textos'>
-            <p className='txt'>Nombre</p>
-            <p className='txt'>Precio</p>
+            <div className={st.textos}>
+            <p className={st.txt}>Nombre</p>
+            <p className={st.txt}>Precio</p>
             </div>
 
-            <div className='comprar'>
-            <img src="\src\imagenes\carrocompras.png" alt="" className='imagen2'/>
+            <div className={st.comprar}>
+            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>
         
         <td>
-        <div className="externo">
-            <div className='superior'></div>
-            <div className='inferior'> </div>
+        <div className={st.externo}>
+            <div className={st.superior}></div>
+            <div className={st.inferior}> </div>
 
-            <div className='gris'>
+            <div className={st.gris}>
 
-                <img src="\src\imagenes\redim_toddlerb.jpg" alt="" className='imagen'/>
+                <img src="\src\imagenes\redim_toddlerb.jpg" alt="" className={st.imagen}/>
 
             </div>
 
-            <div className='textos'>
-            <p className='txt'>Nombre</p>
-            <p className='txt'>Precio</p>
+            <div className={st.textos}>
+            <p className={st.txt}>Nombre</p>
+            <p className={st.txt}>Precio</p>
             </div>
 
-            <div className='comprar'>
-            <img src="\src\imagenes\carrocompras.png" alt="" className='imagen2'/>
+            <div className={st.comprar}>
+            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>
         <td>
-        <div className="externo">
-            <div className='superior'></div>
-            <div className='inferior'> </div>
+        <div className={st.externo}>
+            <div className={st.superior}></div>
+            <div className={st.inferior}> </div>
 
-            <div className='gris'>
+            <div className={st.gris}>
 
-                <img src="\src\imagenes\redim_conjnar.jpg" alt="" className='imagen'/>
+                <img src="\src\imagenes\redim_conjnar.jpg" alt="" className={st.imagen}/>
 
             </div>
 
-            <div className='textos'>
-            <p className='txt'>Nombre</p>
-            <p className='txt'>Precio</p>
+            <div className={st.textos}>
+            <p className={st.txt}>Nombre</p>
+            <p className={st.txt}>Precio</p>
             </div>
 
-            <div className='comprar'>
-            <img src="\src\imagenes\carrocompras.png" alt="" className='imagen2'/>
+            <div className={st.comprar}>
+            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>
