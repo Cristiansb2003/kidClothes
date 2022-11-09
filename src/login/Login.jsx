@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import st from "./login.module.css";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   // State para consumir el valor del usuario
   const [user, setUser] = useState("");
