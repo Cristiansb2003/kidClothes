@@ -1,0 +1,159 @@
+.prueba{
+    min-height: 50%;
+    width: 100%;
+    background-color: cadetblue;
+}
+.tablagen{
+    text-align: center;
+    margin-left: 12%;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.externo{
+    position: relative;
+    min-width: 250px;
+    min-height: 350px;
+    border-width: 10%;
+    border-top-width: 10px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.0);
+    background-color:rgba(0, 0, 0, 0.0);
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-right-width: 55px;
+    border-left-width: 55px;
+}
+
+/* TRIANGULOS DE LAS ESQUINAS */
+.superior{
+    /*clip-path: polygon(0 0, 0 39%, 51% 0);*/
+    clip-path: polygon(0 83% 100% 83% 100% 100% 0% 100%);
+    background: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    height: 10%;
+    position:absolute;
+    top: -20;
+    left: 0;
+}
+
+.inferior{
+    /* clip-path: polygon(46% 100%, 100% 100%, 100% 65%); */
+    clip-path: polygon(0 83% 100% 83% 100% 100% 0% 100%);
+    background: white;
+    width: 108%;
+    height: 25%;
+    position:absolute;
+    bottom: -1%;
+    left: -4%;
+}
+
+/* ACOMODO DE LOS TEXTOS Y DISEÑO DE ELLOS */
+
+.textos{
+    position: absolute;
+    
+    bottom: 10px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    left: 0;
+
+}
+
+.txt{
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    
+}
+
+.links{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10%;
+    transition: all 1s ease;
+}
+
+
+.links:hover{
+    
+    background-color: white;
+    color: white;
+    
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+    border-radius: 10%;
+    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
+
+    
+}
+.links:hover{
+    color: white;
+}
+
+/*Div para poner el carrito de comprar*/
+.comprar{
+    position: absolute;
+    
+    bottom: 30px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    right: 0;
+}
+
+.imagen2{
+    max-width: 50px;
+    max-height: auto;
+}
+
+.imagen2:hover{
+    /*max-width: 65%;
+    max-height: auto;*/
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+
+
+/*ACOMODO DEL DIV DE ATRAS DE LA IMG */
+.gris{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    min-width: 60%;
+    min-height: 48%;
+    margin-bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.00);
+    opacity: 1;
+
+}
+
+/*ACOMODO DE LA IMAGEN */
+.imagen{
+    vertical-align:top;
+    max-width: 90%;
+    max-height: auto;
+    margin-top: 0px;
+  
+   
+    
+}
+
+.imagen:hover{
+    /*max-width: 65%;
+    max-height: auto;*/
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
