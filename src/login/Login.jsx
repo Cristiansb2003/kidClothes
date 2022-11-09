@@ -56,7 +56,7 @@ const Login = () => {
     if (BAND == 1) {
       alert("Bienvenido");
     } else {
-      alert("Error: usuario o contraseña incorrectos");
+      alert("Error: usuario o contraseña incorrectos "+ users[i]+" "+users[2]);
     }
 
     // Limpiar inputs
@@ -89,7 +89,7 @@ const Login = () => {
           onChange={cambioEntradaPass}
         />
         <br />
-        <button onClick={saveData}>Iniciar sesión</button>
+        <Link to="/" className={st.btnLink} onClick={saveData}>Inicio Sesion</Link>
         <br />
         <a href=""> ¿No tienes una cuenta?, registrate aquí </a>
       </div>
