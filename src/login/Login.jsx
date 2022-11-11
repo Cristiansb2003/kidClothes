@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useRef } from "react";
 import st from "./login.module.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 const Login = () => {
-   var ruta= '';
   // State para consumir el valor del usuario
   const [user, setUser] = useState("");
   // State para consumir el valor de la contraseña
@@ -37,30 +36,30 @@ const Login = () => {
     const users = ["root", "admin", "ejemplo"];
     const passs = ["root", "1234", "ejemplo"];
     var i = 0;
-    var  BAND = 0;
+    var BAND = false;
+    
     // Comparación del login
     if (user == localStorage.getItem("user") && pass == localStorage.getItem("password")) {
       // CÓDIGO DE REDIRECCIONAMIENTO A LO QUE SIGA DEL LOGIN
-      BAND = 1;
+      setSavedData(true);
+      BAND = true;
     } else {
       // for para buscar si hay coincidencias con los usuarios preguardados
       for (let i = 0; i < users.length; i++) {
         if (user == users[i] && pass == passs[i]) {
           // CÓDIGO DE REDIRECCIONAMIENTO A LO QUE SIGA DEL LOGIN         
-          BAND = 1
+          setSavedData(true);
+          BAND = true;
           break;
         }
       }
     }
 
-    if (BAND == 1) {
-      ruta = '/'
+    if (BAND) {
       alert("Bienvenido");
     } else {
-      ruta = '/login'
-      alert("Error: usuario o contraseña incorrectos "+ users[i]+" "+users[2]);
+      alert("Error: usuario o contraseña incorrectos");
     }
-    console.log(ruta);
 
     // Limpiar inputs
     setUser("");
@@ -92,9 +91,15 @@ const Login = () => {
           onChange={cambioEntradaPass}
         />
         <br />
-        <Link onClick={saveData} to={ruta} className={st.btnLink} >Inicio Sesion</Link>
+        <button onClick={saveData} className={st.btnLink} >Inicio Sesion</button>
         <br />
         <Link to="/registro"> ¿No tienes una cuenta?, registrate aquí </Link>
+
+        
+        {
+          // CRISTIAN NADA MÁS TIENES QUE CAMBIAR LA RUTA DEL to EN EL SIGUIENTE NAVIGATE A LA RUTA A DONDE QUIERES QUE TE LLEVE
+          (!!savedData) && <Navigate to="/index" />
+        }
       </div>
     </div>
   );

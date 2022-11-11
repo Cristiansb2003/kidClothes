@@ -50,7 +50,7 @@ const Registro = () => {
           onChange={cambioEntradaPass}
         />
         <br />
-        <Link to="/login" onClick={saveData} >Registrarse</Link>
+        <Link to="/login" onClick={saveData} ><button>Registrarse</button></Link>
       </div>
 
       { 
