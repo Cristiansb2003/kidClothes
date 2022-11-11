@@ -3,6 +3,7 @@ import { useRef } from "react";
 import st from "./login.module.css";
 import { Link } from "react-router-dom";
 const Login = () => {
+   var ruta= '';
   // State para consumir el valor del usuario
   const [user, setUser] = useState("");
   // State para consumir el valor de la contraseña
@@ -36,8 +37,7 @@ const Login = () => {
     const users = ["root", "admin", "ejemplo"];
     const passs = ["root", "1234", "ejemplo"];
     var i = 0;
-    var BAND = 0;
-
+    var  BAND = 0;
     // Comparación del login
     if (user == localStorage.getItem("user") && pass == localStorage.getItem("password")) {
       // CÓDIGO DE REDIRECCIONAMIENTO A LO QUE SIGA DEL LOGIN
@@ -54,10 +54,13 @@ const Login = () => {
     }
 
     if (BAND == 1) {
+      ruta = '/'
       alert("Bienvenido");
     } else {
+      ruta = '/login'
       alert("Error: usuario o contraseña incorrectos "+ users[i]+" "+users[2]);
     }
+    console.log(ruta);
 
     // Limpiar inputs
     setUser("");
@@ -89,17 +92,13 @@ const Login = () => {
           onChange={cambioEntradaPass}
         />
         <br />
-        <Link to="/" className={st.btnLink} onClick={saveData}>Inicio Sesion</Link>
+        <Link onClick={saveData} to={ruta} className={st.btnLink} >Inicio Sesion</Link>
         <br />
         <Link to="/registro"> ¿No tienes una cuenta?, registrate aquí </Link>
       </div>
-
-      {
-        // Si se clickeo para ir al registro
-        // AGREGAR CÓDIGO DE REDIRECCIONAMIENTO AL REGISTRO
-      }
     </div>
   );
 };
+
 
 export default Login;
