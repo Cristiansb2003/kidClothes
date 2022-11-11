@@ -91,7 +91,7 @@ const Login = () => {
         <br />
         <Link to="/" className={st.btnLink} onClick={saveData}>Inicio Sesion</Link>
         <br />
-        <a href=""> ¿No tienes una cuenta?, registrate aquí </a>
+        <Link to="/registro"> ¿No tienes una cuenta?, registrate aquí </Link>
       </div>
 
       {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import st from "./registro.module.css";
 import Login from "../Login";
+import { Link } from "react-router-dom";
 
 const Registro = () => {
 
@@ -49,7 +50,7 @@ const Registro = () => {
           onChange={cambioEntradaPass}
         />
         <br />
-        <button onClick={saveData} >Registrarse</button>
+        <Link to="/login" onClick={saveData} >Registrarse</Link>
       </div>
 
       { 
