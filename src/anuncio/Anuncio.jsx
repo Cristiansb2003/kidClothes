@@ -11,7 +11,7 @@ function Anuncio() {
 
   let interval = useRef();
   const startTimer = () => {
-    const countdowDate = new Date("November 23, 2022 00:00:00").getTime();
+    const countdowDate = new Date("November 19, 2022 00:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdowDate - now;
@@ -47,9 +47,9 @@ function Anuncio() {
       <div className={st.info}>
         <div className={st.contenido}>
           <div className={st.titulo}>
-            <p>Ofertas de Buen Fin</p>
+            <p className={st.enca}>Ofertas de Buen Fin</p>
+            <p className={st.descripcion}>Aprovecha este 19 y 20 de Noviembre nuestras ofertas de Buen Fin</p>
           </div>
-          <section className={st.timer_container}>
             <section className={st.timer}>
               <div>
                 <section>
@@ -81,7 +81,6 @@ function Anuncio() {
                 </section>
               </div>
             </section>
-          </section>
         </div>
       </div>
     </div>

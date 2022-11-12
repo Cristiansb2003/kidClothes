@@ -41,7 +41,7 @@ function Contacto(){
         <div className={stc.InfoCont}>
         <div className={stc.Info}>
             <h1 className={stc.tituloqs}><b>Contactanos</b></h1>
-            <p>Nos interesa saber tu opinion acerca de nuestros productos</p>
+            <p className={stc.desc}>Nos interesa saber tu opinion acerca de nuestros productos</p>
         </div>
         <div className={stc.formulario}>
          

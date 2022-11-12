@@ -1,6 +1,5 @@
 import { useState } from "react";
 import st from "./registro.module.css";
-import Login from "../Login";
 import { Link } from "react-router-dom";
 
 const Registro = () => {

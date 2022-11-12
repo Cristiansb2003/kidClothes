@@ -1,0 +1,25 @@
+.contenedor {
+  width: 100%;
+}
+.controls {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+ul {
+  padding: 0;
+}
+.controls li.active{
+    color: black;
+}
+.controls li {
+  color: #b7b7b7;
+  font-size: 27px;
+  font-weight: 700;
+  list-style: none;
+  display: inline-block;
+  margin-right: 88px;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0px 50px 0 50px;
+}

@@ -1,5 +1,4 @@
 import st from "./menu.module.css";
-import user from "./../assets/user.svg"
 import user2 from "./../assets/user2.png"
 function Menu() {
   return (

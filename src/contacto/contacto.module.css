@@ -40,7 +40,10 @@
     justify-content: flex-start;
     
 }
+.desc{
 
+    color: black;
+}
 
 .btt{
     color: white;
