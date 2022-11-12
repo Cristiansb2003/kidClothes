@@ -98,7 +98,7 @@ const Login = () => {
         
         {
           // CRISTIAN NADA MÁS TIENES QUE CAMBIAR LA RUTA DEL to EN EL SIGUIENTE NAVIGATE A LA RUTA A DONDE QUIERES QUE TE LLEVE
-          (!!savedData) && <Navigate to="/index" />
+          (!!savedData) && <Navigate to="/" />
         }
       </div>
     </div>
