@@ -35,11 +35,6 @@ function Qsomos(){
         <h1 className={stq.tituloqs}>Mapa de ubicaciones</h1>
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1spAc6cjZaZZ-y8UzpXtinPdyjGwR41k&ehbc=2E312F" className={stq.mapa}></iframe>
         
-        <h1 className={stq.tituloqs}>Contactanos</h1>
-        {/*
-        AQUI DEBE IR EL FORMULARIO DE CONTACTO QUE SE SUPONE ESTA HACIENDO JC
-        */}
-        
         </>
     )
 
