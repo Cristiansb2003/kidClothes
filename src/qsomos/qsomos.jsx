@@ -1,5 +1,5 @@
 import stq from './qsomos.module.css'
-import video from '/src/imagenes/mbp.mp4'
+import video from '/src/imagenes/kidclothesVIDEO.mp4'
 
 function Qsomos(){
     return(

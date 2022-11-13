@@ -8,7 +8,6 @@ function Ropa(){
         <div>
             <Top/>
             <Card/>
-            <Card/>
             <Ffooter/>
         </div>
     )

@@ -11,7 +11,7 @@ function Nuevo(){
                 </ul>
             </div>
             <Card/>
-            <Card/>
+            
         </div>
     )
 }
