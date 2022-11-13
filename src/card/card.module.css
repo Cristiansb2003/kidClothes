@@ -131,8 +131,8 @@
   min-width: 60%;
   min-height: 48%;
   margin-bottom: 30%;
-  background-color: rgba(0, 0, 0, 0);
   opacity: 1;
+  background: #f3f2ee;
 }
 
 /*ACOMODO DE LA IMAGEN */

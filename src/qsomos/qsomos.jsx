@@ -3,8 +3,8 @@ import video from '/src/imagenes/mbp.mp4'
 
 function Qsomos(){
     return(
-        <>
-        <h1 className={stq.tituloqs}>¿QUIÉNES SOMOS?</h1>
+        <div className={stq.contenedor}>
+            <h1 className={stq.tituloqs}>¿QUIÉNES SOMOS?</h1>
         <video src={video} type='video/mp4' controls className={stq.videoqs}>
         </video>
         <div className={stq.infos}>
@@ -35,7 +35,7 @@ function Qsomos(){
         <h1 className={stq.tituloqs}>Mapa de ubicaciones</h1>
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1spAc6cjZaZZ-y8UzpXtinPdyjGwR41k&ehbc=2E312F" className={stq.mapa}></iframe>
         
-        </>
+        </div>
     )
 
 }

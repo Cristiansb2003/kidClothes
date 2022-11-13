@@ -1,4 +1,6 @@
-
+.contenedor{
+    margin-bottom: 2rem;
+}
 .videoqs{
     height: 500px;
     width: 50%;

@@ -1,3 +1,8 @@
+import Ffooter from '../footer/Footer'
+import img1 from './../imagenes/1.png'
+import img2 from './../imagenes/2.png'
+import img3 from './../imagenes/3.png'
+import carrito from './../imagenes/carrocompras.png'
 import st from './card.module.css'
 function Card(){
     return(
@@ -6,11 +11,11 @@ function Card(){
         <td>
         <div className={st.externo}>
             <div className={st.superior}></div>
-            <div className={st.inferior}> </div>
+            <div className={st.inferior}> </div> 
 
             <div className={st.gris}>
 
-                <img src="\src\imagenes\conjcel.jpg" alt="" className={st.imagen}/>
+                <img src={img1} alt="" className={st.imagen}/>
 
             </div>
 
@@ -20,7 +25,7 @@ function Card(){
             </div>
 
             <div className={st.comprar}>
-            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
+            <img src={carrito} alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>
@@ -32,7 +37,7 @@ function Card(){
 
             <div className={st.gris}>
 
-                <img src="\src\imagenes\redim_toddlerb.jpg" alt="" className={st.imagen}/>
+                <img src={img2} alt="" className={st.imagen}/>
 
             </div>
 
@@ -42,7 +47,7 @@ function Card(){
             </div>
 
             <div className={st.comprar}>
-            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
+            <img src={carrito} alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>
@@ -53,7 +58,7 @@ function Card(){
 
             <div className={st.gris}>
 
-                <img src="\src\imagenes\redim_conjnar.jpg" alt="" className={st.imagen}/>
+                <img src={img3} alt="" className={st.imagen}/>
 
             </div>
 
@@ -63,7 +68,7 @@ function Card(){
             </div>
 
             <div className={st.comprar}>
-            <img src="\src\imagenes\carrocompras.png" alt="" className={st.imagen2}/>
+            <img src={carrito} alt="" className={st.imagen2}/>
             </div>
         </div>
         </td>

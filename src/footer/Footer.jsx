@@ -1,8 +1,8 @@
 import stf from './footer.module.css'
 function Ffooter(){
     return(
-        <>
-        <footer>
+        <div className={stf.contenedor}>
+            <footer>
             <div className={stf.ubicaciones}>
                 <h2 className={stf.hacheuno}>UBICACIONES</h2>
                 <p>1: <a className={stf.linkss} href='https://www.google.com/maps/d/u/0/edit?mid=1TIruhkXKWZwBq-csEe5Krtjj5vuewis&usp=sharing' target={'blank'}>San Pedro</a></p>
@@ -21,8 +21,7 @@ function Ffooter(){
                 <p>Derechos reservados || KidClothes 2022</p>
             </div>
         </footer>
-        </>
-
+        </div>
     )
 }
 export default Ffooter
