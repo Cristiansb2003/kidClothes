@@ -1,14 +1,16 @@
 .formulario {
-  border: 2px solid #fff;
+  border: 2px solid #000;
   background-color: rgba(256, 256, 256, 0.05);
   padding-bottom: 50px;
   padding-left: 100px;
   padding-right: 100px;
   border-radius: 10px;
+  margin-left: 12%;
+  width: 60%;
 }
 
   .formulario div {
-     background-color: #000;
+     background-color: #fff;
      border-radius: 10px;
      padding-bottom: 10px;
      padding-left: 30px;
@@ -18,9 +20,16 @@
 
   .formulario button {
      border-radius: 10px;
-     background-color: blue;
+     background-color: black;
      color: #fff;
   }
+
+  .formulario button:hover {
+   border-radius: 10px;
+   background-color: white;
+   color: #000;
+}
+
 
   .formulario input {
      background-color: rgb(245, 245, 245);

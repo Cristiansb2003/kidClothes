@@ -1,0 +1,13 @@
+.imagen{
+    height: 500px;
+    width: 55%; 
+}
+
+h2{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1{
+    font-family: "Volkorn", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}

@@ -10,7 +10,7 @@ function Menu() {
           <ul>
             <NavLink to="/home"><li  className={st.ini}>Inicio</li></NavLink>
             <NavLink to="/ropa"><li className={st.rop}>Ropa</li></NavLink>
-            <li className={st.not}>Noticias</li>
+            <NavLink to="/noticias"><li className={st.not}>Noticias</li></NavLink>
             <NavLink to="/info"><li className={st.inf}>Info</li></NavLink>
             <Link to="/login"><li className={st.us}><img src={user2}/></li></Link>
           </ul>

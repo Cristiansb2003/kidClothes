@@ -1,5 +1,6 @@
 import Anuncio from "../anuncio/Anuncio"
 import Carrucel from "../carrucel/Carrucel"
+import Comercial from "../comercial/Comercial"
 import Contacto from "../contacto/Contacto"
 import Ffooter from "../footer/Footer"
 import Nuevo from "../nuevo/Nuevo"
@@ -16,6 +17,7 @@ function Inicio(){
       <Anuncio/>
       <Qsomos/>
       <Contacto/>
+      
       <Ffooter/>
     </div>
   )
